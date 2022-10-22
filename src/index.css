@@ -1,0 +1,13 @@
+body {
+    cursor: none;
+    height: 100vh;
+    background-color: rgba(0,0,0,.1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background: linear-gradient(rgba(0,0,0, .5), 
+                                rgba(0,0,0,.9)), 
+                                url("./images/objects.jpg"); 
+    
+}
