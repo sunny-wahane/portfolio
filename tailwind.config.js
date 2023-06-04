@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'oswald': ['Oswald', 'sans-serif'],
-        'antic': ['Antic', 'sans-serif']
+        'heading': ['Monomaniac One', 'sans-serif'],
+        'text': ['Rubik', 'sans-serif']
       }, 
       colors: {
-        'turtle-green': '#86C232',
+        'primary': '#86C232',
       }
     }
   },
