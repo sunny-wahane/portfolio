@@ -10,7 +10,7 @@ module.exports = {
         'text': ['Rubik', 'sans-serif']
       }, 
       colors: {
-        'primary': '#86C232',
+        'primary': 'black',
       }
     }
   },
