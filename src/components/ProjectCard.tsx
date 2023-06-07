@@ -9,9 +9,10 @@ export default function ProjectCard({name, description, link, repo, image}: {
     image: string
 }) {
     return (
-        <div className='flex-1 mt-10 ml-10 p-10 border border-lg border-primary basis-1/4'>
-            <img src={image} alt="" />
-            <h3 className='font-heading py-3'>{name}</h3>
+            <div className='flex-1 mt-10 ml-10 basis-1/4 shadow-xl'>
+            <img src={image} alt="" className='object-fill px-6' />
+            <div className='px-10 pb-10'>
+            <h3 className='font-heading py-3 text-2xl'>{name}</h3>
             <ul className='list-disc'>
                 {
                     description.map(item => {
@@ -22,9 +23,11 @@ export default function ProjectCard({name, description, link, repo, image}: {
                 }
             </ul>
             <div className='text-center content-center'>
-            <a href={link}><button className='px-5 py-1 mt-5 mx-5 hover:bg-primary   font-primary rounded-md border-2 border-primary'>Live</button></a>
-            <a href={link}><button className='px-5 py-1 mt-5 mx-5 hover:bg-primary   font-primary rounded-md border-2 border-primary'>Github</button></a>
+            <a href={link} className='cursor-none'><button className='cursor-none px-5 py-1 mt-5 mx-5 hover:bg-primary hover:text-white  font-primary rounded-md border-2 border-primary'>Live</button></a>
+            <a href={link} className='cursor-none'><button className='cursor-none px-5 py-1 mt-5 mx-5 hover:bg-primary hover:text-white   font-primary rounded-md border-2 border-primary'>Github</button></a>
+            </div>
             </div>
         </div>
+        
     )
 }

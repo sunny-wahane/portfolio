@@ -6,7 +6,6 @@ function NavBar() {
         <NavItem name="Home"/>
         <NavItem name="Work Experience"/>
         <NavItem name="Projects"/>
-        <NavItem name="Connect"/>
        </ul>
     )
 } 
