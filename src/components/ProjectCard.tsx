@@ -10,7 +10,7 @@ export default function ProjectCard({name, description, link, repo, image}: {
 }) {
     return (
             <div className='flex-1 mt-10 ml-10 basis-1/4 shadow-xl'>
-            <img src={image} alt="" className='object-fill px-6' />
+            <img src={image} alt="" className='object-fill' />
             <div className='px-10 pb-10'>
             <h3 className='font-heading py-3 text-2xl'>{name}</h3>
             <ul className='list-disc'>
