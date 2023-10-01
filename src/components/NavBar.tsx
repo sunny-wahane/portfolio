@@ -1,11 +1,13 @@
 import NavItem from "./NavItem";
+import data from "../content/NavOptions.json"
+
 
 function NavBar() {
     return (
        <ul className="text-right px-20 py-10">
-        <NavItem name="Home"/>
-        <NavItem name="Work Experience"/>
-        <NavItem name="Projects"/>
+        {data.items.map((item) => (
+            <NavItem name={item}/>
+        ))}
        </ul>
     )
 } 
