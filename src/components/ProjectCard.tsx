@@ -23,8 +23,8 @@ export default function ProjectCard({name, description, link, repo, image}: {
                 }
             </ul>
             <div className='text-center content-center'>
-            <a href={link} className='cursor-none'><button className='cursor-none px-5 py-1 mt-5 mx-5 hover:bg-primary hover:text-white  font-primary rounded-md border-2 border-primary'>Live</button></a>
-            <a href={link} className='cursor-none'><button className='cursor-none px-5 py-1 mt-5 mx-5 hover:bg-primary hover:text-white   font-primary rounded-md border-2 border-primary'>Github</button></a>
+            <a href={link} target="_blank" className='cursor-none'><button className='cursor-none px-5 py-1 mt-5 mx-5 hover:bg-primary hover:text-white  font-primary rounded-md border-2 border-primary'>Live</button></a>
+            <a href={repo} target="_blank" className='cursor-none'><button className='cursor-none px-5 py-1 mt-5 mx-5 hover:bg-primary hover:text-white   font-primary rounded-md border-2 border-primary'>Github</button></a>
             </div>
             </div>
         </div>
